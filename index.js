@@ -14,6 +14,9 @@ app.get("/", (req, res) => {
 app.get("/news-category", (req, res) => {
     res.send(category)
 });
+app.get("/news", (req, res) => {
+    res.send(news);
+})
 app.get("/category/:id", (req, res) => {
     const id = req.params.id;
     if (id === '08') {
